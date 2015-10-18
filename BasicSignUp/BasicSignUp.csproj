@@ -77,6 +77,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="signup.aspx" />
+    <Content Include="signupSuccess.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signupSuccess.aspx.cs">
+      <DependentUpon>signupSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signupSuccess.aspx.designer.cs">
+      <DependentUpon>signupSuccess.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

@@ -22,6 +22,15 @@ namespace BasicSignUp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// lblWelcome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblWelcome;
+        
+        /// <summary>
         /// lblFirstName control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace BasicSignUp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+        
+        /// <summary>
+        /// lblFirstNameRequire control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFirstNameRequire;
         
         /// <summary>
         /// lblLastName control.
@@ -58,6 +76,15 @@ namespace BasicSignUp {
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
         
         /// <summary>
+        /// lblLastNameRequire control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblLastNameRequire;
+        
+        /// <summary>
         /// Country control.
         /// </summary>
         /// <remarks>
@@ -67,13 +94,22 @@ namespace BasicSignUp {
         protected global::System.Web.UI.WebControls.Label Country;
         
         /// <summary>
-        /// lblCountry control.
+        /// txtCountry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lblCountry;
+        protected global::System.Web.UI.WebControls.TextBox txtCountry;
+        
+        /// <summary>
+        /// lblCountryRequire control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCountryRequire;
         
         /// <summary>
         /// lblPassword control.
@@ -85,48 +121,57 @@ namespace BasicSignUp {
         protected global::System.Web.UI.WebControls.Label lblPassword;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
         
         /// <summary>
-        /// lblPassword1 control.
+        /// lblPasswordRequire control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPassword1;
+        protected global::System.Web.UI.WebControls.Label lblPasswordRequire;
         
         /// <summary>
-        /// txtPasswordConfirm control.
+        /// lblPasswordConfirm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtPasswordConfirm;
+        protected global::System.Web.UI.WebControls.Label lblPasswordConfirm;
         
         /// <summary>
-        /// TextBox2 control.
+        /// txtPwConfirmRequire control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtPwConfirmRequire;
         
         /// <summary>
-        /// lblPassword2 control.
+        /// lblPasswordConfirmRequire control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPassword2;
+        protected global::System.Web.UI.WebControls.Label lblPasswordConfirmRequire;
+        
+        /// <summary>
+        /// btnSubmitInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmitInfo;
     }
 }

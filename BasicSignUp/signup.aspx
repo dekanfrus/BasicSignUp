@@ -15,31 +15,42 @@
     <form id="form1" runat="server">
     <div class="auto-style1">
     
+        <asp:Label ID="lblWelcome" runat="server" Text="Label"></asp:Label>
+    
+        <br />
+        <br />
+        <br />
         <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
         <br />
         <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
+        <asp:Label ID="lblFirstNameRequire" runat="server" ForeColor="Red" Text="* This field is required" Visible="False"></asp:Label>
         <br />
         <br />
         <asp:Label ID="lblLastName" runat="server" Text="Last Name"></asp:Label>
         <br />
         <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+        <asp:Label ID="lblLastNameRequire" runat="server" ForeColor="Red" Text="* This field is required" Visible="False"></asp:Label>
         <br />
         <br />
         <asp:Label ID="Country" runat="server" Text="Country"></asp:Label>
         <br />
-        <asp:TextBox ID="lblCountry" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtCountry" runat="server"></asp:TextBox>
+        <asp:Label ID="lblCountryRequire" runat="server" ForeColor="Red" Text="* This field is required" Visible="False"></asp:Label>
         <br />
         <br />
         <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server" TextMode="Password"></asp:TextBox>
-        <asp:Label ID="lblPassword1" runat="server" Text="* This field is required" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:Label ID="lblPasswordRequire" runat="server" ForeColor="Red" Text="* This field is required" Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Label ID="txtPasswordConfirm" runat="server" Text="Repeat Password"></asp:Label>
+        <asp:Label ID="lblPasswordConfirm" runat="server" Text="Repeat Password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
-        <asp:Label ID="lblPassword2" runat="server" Text="* Passwords must match" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtPwConfirmRequire" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:Label ID="lblPasswordConfirmRequire" runat="server" ForeColor="Red" Text="* Passwords must match" Visible="False"></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="btnSubmitInfo" runat="server" OnClick="btnSubmitInfo_Click" Text="Submit" />
     
     </div>
     </form>

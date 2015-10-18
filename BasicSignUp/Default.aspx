@@ -23,7 +23,9 @@
         <asp:Label ID="flagEmail" runat="server" ForeColor="Red" Text="* This field is required" Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+        <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
+        <br />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:InternetProgrammingTestConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
     </form>
 </body>
 </html>
