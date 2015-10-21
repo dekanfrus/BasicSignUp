@@ -52,6 +52,13 @@
         <br />
         <asp:Button ID="btnSubmitInfo" runat="server" OnClick="btnSubmitInfo_Click" Text="Submit" />
     
+        <br />
+        <br />
+        <asp:TextBox ID="txtError" runat="server" Visible="False" Width="303px">Oh no!  Something went wrong!</asp:TextBox>
+        <br />
+        <br />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:InternetProgrammingTestConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
+    
     </div>
     </form>
 </body>
