@@ -10,6 +10,7 @@
             height: 507px;
         }
     </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -54,7 +55,7 @@
     
         <br />
         <br />
-        <asp:TextBox ID="txtError" runat="server" Visible="False" Width="303px">Oh no!  Something went wrong!</asp:TextBox>
+        <asp:TextBox ID="txtError" runat="server" Visible="False" Width="303px"></asp:TextBox>
         <br />
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:InternetProgrammingTestConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>

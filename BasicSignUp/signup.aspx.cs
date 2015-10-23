@@ -30,7 +30,6 @@ namespace BasicSignUp
             string userName = (string)Session["Username"];
             string email = (string)Session["Email"];
             string password = txtPassword.Text;
-            bool complex = false;
 
             if (txtPassword.Text == txtPwConfirmRequire.Text)
             {

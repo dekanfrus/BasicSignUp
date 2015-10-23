@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <div>
     
-    </div>
+        You have successfully signed up!</div>
     </form>
 </body>
 </html>

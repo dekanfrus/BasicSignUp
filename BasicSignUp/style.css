@@ -1,7 +1,140 @@
 ﻿body {
+    
+
 }
 
-.signup {
-    width:auto;
-    height: 25%;
+html {
+   background-color: #56c4b5;
+}
+#signup {
+    align-items: center;
+}
+#btnSubmit {
+    color: #173c93;
+    border-radius: 3px;
+    background-color: #eebe7c;
+    font-size: 100%;
+}
+
+#btnSubmitInfo {
+    color: #173c93;
+    border-radius: 3px;
+    background-color: #eebe7c;
+    font-size: 100%;
+}
+
+#txtUserName{
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #8ed6cf;
+    background-color: #eebe7c;
+    height:auto;
+    width: 10%;
+}
+
+#txtFirstName{
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #8ed6cf;
+    background-color: #eebe7c;
+    height:auto;
+    width: 10%;
+}
+
+#txtLastName{
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #8ed6cf;
+    background-color: #eebe7c;
+    height:auto;
+    width: 10%;
+}
+
+#txtCountry{
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #8ed6cf;
+    background-color: #eebe7c;
+    height:auto;
+    width: 10%;
+}
+
+#txtPassword{
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #8ed6cf;
+    background-color: #eebe7c;
+    height:auto;
+    width: 10%;
+}
+
+#txtPwConfirmRequire{
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #8ed6cf;
+    background-color: #eebe7c;
+    height:auto;
+    width: 10%;
+}
+
+#txtEmail {
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #8ed6cf;
+    background-color: #eebe7c;
+    width: 10%;
+}
+
+#lblUserName {
+    text-align: center;
+    padding: 2px;
+    font-size: 175%;
+    color: #173c93;
+}
+
+#lblEmail {
+    text-align: center;
+    padding: 2px;
+    font-size: 175%;
+    color: #173c93;
+}
+
+#lblFirstName {
+    text-align: center;
+    padding: 2px;
+    font-size: 175%;
+    color: #173c93;
+}
+
+#lblLastName {
+    text-align: center;
+    padding: 2px;
+    font-size: 175%;
+    color: #173c93;
+}
+
+#Country {
+    text-align: center;
+    padding: 2px;
+    font-size: 175%;
+    color: #173c93;
+}
+
+#lblPassword {
+    text-align: center;
+    padding: 2px;
+    font-size: 175%;
+    color: #173c93;
+}
+
+#lblPasswordConfirm {
+    text-align: center;
+    padding: 2px;
+    font-size: 175%;
+    color: #173c93;
+}
+
+#lblWelcome {
+    font-size: 225%;
+    color: #173c93;
 }

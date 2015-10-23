@@ -12,31 +12,34 @@ namespace BasicSignUp
     public partial class Default : System.Web.UI.Page
     {
         static string userName, email;
+        int userExists, emailExists;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected bool userSearch(string userName)
+        protected int userSearch(string userName)
         {
             SqlConnection signup = new SqlConnection(SqlDataSource1.ConnectionString);
             SqlCommand user = new SqlCommand();
 
             user.CommandType = System.Data.CommandType.Text;
-            user.CommandText = ("SELECT * FROM User WHERE User_Username='" + userName + "';");
+            user.CommandText = ("SELECT * FROM [User] WHERE User_Username='" + userName + "';");
             user.Connection = signup;
 
             signup.Open();
             try
             {
-                user.ExecuteNonQuery();
-                return true;
+                userExists = user.ExecuteNonQuery();
+                return userExists;
             }
 
-            catch
+            catch(Exception error)
             {
-                return false;
+                txtError2.Text = error.Message;
+                txtError2.Visible = true;
+                return userExists;
             }
 
             finally
@@ -45,25 +48,27 @@ namespace BasicSignUp
             }
         }
 
-        protected bool emailSearch(string userEmail)
+        protected int emailSearch(string userEmail)
         {
             SqlConnection signup = new SqlConnection(SqlDataSource1.ConnectionString);
             SqlCommand email = new SqlCommand();
 
             email.CommandType = System.Data.CommandType.Text;
-            email.CommandText = ("SELECT * FROM User WHERE User_Email='" + userEmail + "';");
+            email.CommandText = ("SELECT * FROM [User] WHERE User_Email='" + userEmail + "';");
             email.Connection = signup;
 
             signup.Open();
             try
             {
                 email.ExecuteNonQuery();
-                return true;
+                return emailExists;
             }
 
-            catch
+            catch (Exception error)
             {
-                return false;
+                txtError2.Text = error.Message;
+                txtError2.Visible = true;
+                return emailExists;
             }
 
             finally
@@ -77,7 +82,7 @@ namespace BasicSignUp
             userName = txtUserName.Text;
             email = txtEmail.Text;
 
-            bool userExists, emailExists;
+            int userExists, emailExists;
             
             if (txtUserName.Text == "" || txtEmail.Text == "")
             {
@@ -89,15 +94,15 @@ namespace BasicSignUp
             userExists = userSearch(userName);
             emailExists = emailSearch(email);
 
-            if (userExists == true)
+            if (userExists == 1)
             {
-                flagUserName.Text = "That username already exists, please choose a different one.";
+                flagUserName.Text = "* That username already exists, please choose a different one.";
                 flagUserName.Visible = true;
             }
             
-            else if (emailExists == true)
+            else if (emailExists == 1)
             {
-                flagEmail.Text = "That email is already in use, please use a different one.";
+                flagEmail.Text = "* That email is already in use, please use a different one.";
                 flagEmail.Visible = true;
             }
             else

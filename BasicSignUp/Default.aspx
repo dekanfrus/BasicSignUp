@@ -25,6 +25,10 @@
         <br />
         <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
         <br />
+        <br />
+        <asp:TextBox ID="txtError2" runat="server" Visible="False" Width="268px"></asp:TextBox>
+        <br />
+        <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:InternetProgrammingTestConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
     </form>
 </body>
